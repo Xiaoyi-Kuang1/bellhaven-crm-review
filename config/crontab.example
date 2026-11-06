@@ -1,0 +1,6 @@
+# Example only; not installed. Requires a cron implementation supporting CRON_TZ.
+# Replace /absolute/path/to/ds with the project directory.
+# Set BELLHAVEN_API_TOKEN in the scheduler environment; never commit the token.
+# Keep the same persistent data/review.sqlite3 across runs to preserve decisions.
+CRON_TZ=America/New_York
+15 6 * * * cd /absolute/path/to/ds && /absolute/path/to/ds/.venv/bin/python daily.py >> data/daily.log 2>&1
