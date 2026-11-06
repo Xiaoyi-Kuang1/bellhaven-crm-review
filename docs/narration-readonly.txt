@@ -1,0 +1,15 @@
+This is the current Bellhaven review interface, showing the completed reconciliation. Twenty-nine proposals were synced and one was rejected. This walkthrough uses the preserved decisions.
+
+I will open Ashland as an example. The comparison shows the outdated account name and the approved website spelling, side by side.
+
+Evidence links to the community source and preserves the original account and billing values.
+
+History records the approval rationale and successful read-back. Every CRM write requires explicit approval, and the execution result remains available for audit.
+
+Ashtabula shows why matching is not enough. The website lists a physical address, but the CRM has a billing post office box. That does not prove the billing address is wrong, so this proposal was rejected.
+
+Tiffin has eighty-four thousand dollars in lifetime revenue and twelve thousand four hundred dollars in outstanding receivables. The billing rule requires a new account under Bellhaven. The original parent and billing history stay unchanged, with a CHOW link to the new account.
+
+The pending queue is empty. Daily discovery proposes changes without automatically applying them. The persistent decision ledger prevents unchanged approvals and rejections from appearing again. The verified repeat run added zero proposals.
+
+The completed CRM has thirty-five distinct active Bellhaven communities. The repository includes the scraper, matching logic, review application, schedule configuration, and thirty-four passing tests. Original approval and rejection footage is retained separately.

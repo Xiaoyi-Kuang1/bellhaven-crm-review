@@ -19,7 +19,7 @@ Each website community has a distinct active account under Bellhaven. All origin
 
 ## Run locally
 
-For a one-command local preview, run `./start.sh`. It creates a virtual environment if needed, installs the pinned dependencies, and starts with CRM writes disabled. The delivery archive includes the completed review ledger. A GitHub checkout excludes local CRM data and requires `BELLHAVEN_API_TOKEN` for initial discovery. `./start.sh --enable-writes` explicitly enables approval writes. Existing servers must be stopped before starting another instance.
+For a one-command local preview, run `./start.sh`. It creates a virtual environment if needed, installs the pinned dependencies, and starts with CRM writes disabled. To preview the completed review without a token, first run `unzip examples/completed-review.zip -d .`, then `./start.sh`. The evidence bundle contains fictional assessment data and preserved decisions, with no API token. For a fresh independent run, skip extraction and supply `BELLHAVEN_API_TOKEN` for initial discovery. Do not overwrite an existing ledger with the example bundle. `./start.sh --enable-writes` explicitly enables approval writes. Existing servers must be stopped before starting another instance.
 
 
 Requires Python 3.10+ on macOS or Linux (`fcntl` is used for process locks).
@@ -44,7 +44,7 @@ Stop the preview server before starting write-enabled review:
 python3 review.py --enable-writes
 ```
 
-In the delivery archive, `data/review.sqlite3` retains the completed review decisions. Do not delete or replace it between daily runs. With no pending proposals, the UI lists completed decisions. Select a row to open its review drawer. Changes, Evidence, and History are separate views. Long notes, account IDs, and decision rationales expand on demand. The CHOW billing-protection notice remains visible across views. Close or press Escape to return to the queue.
+In the evidence bundle and delivery archive, `data/review.sqlite3` retains the completed review decisions. Do not delete or replace it between daily runs. With no pending proposals, the UI lists completed decisions. Select a row to open its review drawer. Changes, Evidence, and History are separate views. Long notes, account IDs, and decision rationales expand on demand. The CHOW billing-protection notice remains visible across views. Close or press Escape to return to the queue.
 
 Tokens are supplied through the environment, never embedded in source code. The server binds to loopback only. The project archive contains evidence and the review ledger, but no API credential.
 
@@ -124,6 +124,9 @@ All 34 tests pass. Coverage includes incomplete evidence, source tampering, name
 The live audit verifies every approved operation against the current CRM, compares original business fields against the initial snapshot, preserves all original financial values, checks account counts, verifies 35 distinct active Bellhaven mappings and regenerates proposals without adding queue entries. It makes no CRM writes; it does use the local proposal ledger to validate rerun behavior.
 
 ## Demonstration
+
+The current full-width queue and review drawer are demonstrated in the November 6 silent recording. See [the recording guide](docs/DEMO.md) and [timestamped English voiceover](docs/narration-timed.txt). These show preserved decisions without replaying CRM mutations.
+
 
 `deliverables/bellhaven-demo.mp4` is approximately 2 minutes 4 seconds. It shows actual Ashland approval, Ashtabula rejection and Tiffin CHOW evidence, with synthesized English narration. The opening dashboard and final CRM confirmation are still captures of the real application. The original tab recording is retained locally as `deliverables/review-recording.webm`.
 
