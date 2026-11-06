@@ -7,7 +7,6 @@ Reconcile a senior-living website with CRM accounts through an evidence-based ap
 ## Start here
 
 - **Try the app:** follow the quick start below.
-- **Watch the demo:** [recording and voiceover guide](docs/demo/README.md).
 - **Review the outcome:** [verified CRM results](docs/results.md).
 - **Understand the logic:** [matching, billing safeguards, and tradeoffs](docs/approach.md).
 
@@ -39,7 +38,7 @@ The November 4, 2026 reconciliation covered **35 website communities**: **29 pro
 | `review.py`, `web/`, `start.sh` | Local review application and launcher |
 | `verify.py`, `tests/` | Read-back audit and automated checks |
 | [config/](config/) | Daily cron example; not installed |
-| [docs/](docs/operations.md) | Operations, approach, results, and demonstration |
+| [docs/](docs/operations.md) | Operations, approach, and results |
 | [examples/](examples/README.md) | Completed fictional review evidence |
 
 ## Validation

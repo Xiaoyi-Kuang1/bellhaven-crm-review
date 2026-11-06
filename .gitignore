@@ -7,3 +7,8 @@ data/
 # Local recordings, packaged evidence, and delivery screenshots.
 deliverables/
 .DS_Store
+
+# Recording and voiceover deliverables are provided separately.
+docs/demo/
+*.mp4
+*.webm

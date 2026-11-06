@@ -30,7 +30,3 @@ The 29 applied proposals comprised four new locations, four direct reparentings,
 - **Rejected:** Ashtabula's proposed billing-address replacement. A website physical address does not establish that a CRM billing PO box is wrong. This rejection is retained and does not re-enter the queue on an unchanged rerun.
 
 Every mutation passed through the application's approval executor with a recorded rationale. The first examples and final approval/rejection were performed in the UI; the other individually reviewed proposals were approved through the same application's HTTP endpoint in dependency order. No write bypassed the executor. The sandbox accepted `Active`, `Inactive` and `Needs Review`, as well as the approved POST/PATCH payloads, and the results were read back.
-
-## Demonstration evidence
-
-The [current-interface recording](demo/README.md) walks through the preserved decisions. The original live approval and rejection footage is linked in that guide. No decisions were reset for recording.
