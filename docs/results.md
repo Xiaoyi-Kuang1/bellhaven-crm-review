@@ -17,7 +17,7 @@ The live sandbox was reconciled on November 4, 2026:
 | Pending / failed proposals | 0 / 0 |
 | New queue entries on repeat reconciliation | 0 |
 
-Each website community has a distinct active account under Bellhaven. All original `lifetime_revenue` and `outstanding_ar` values are unchanged, and every changed original business field is covered by an approved operation. The latest read-only audit is `data/verification/20261104T192958Z/report.json`. 
+Each website community has a distinct active account under Bellhaven. All original `lifetime_revenue` and `outstanding_ar` values are unchanged, and every changed original business field is covered by an approved operation. The latest read-only audit is `data/verification/20261104T192958Z/report.json`.
 
 ## Actual decisions
 

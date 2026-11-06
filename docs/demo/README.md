@@ -20,4 +20,3 @@ The [original review demo](https://drive.google.com/file/d/10uXwPQMYwylOGBLQwvuw
 3. Align each clip with its stated start time; finish before the end time.
 4. Import `narration.srt` if subtitles are wanted; adjust individual captions to your actual speech pacing.
 5. Export an H.264 MP4 with your voice track.
-
